@@ -1,12 +1,19 @@
 package com.example.springtaskmgradvnc.Entities;
 
-import jakarta.persistence.*;
+
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import java.util.Date;
 import java.util.List;
-
+@AllArgsConstructor
+@NoArgsConstructor
 @Setter
 @Getter
 @Entity(name="tasks")
@@ -21,7 +28,7 @@ public class TaskEntity extends BaseEntity {
     @Column(name = "due_Date",nullable = true  )
     Date dueDate;
 
-    @OneToMany(mappedBy = "task")
-    List<NoteEntity> notes;
+
+
 }
 

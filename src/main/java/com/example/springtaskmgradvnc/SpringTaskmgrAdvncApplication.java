@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class SpringTaskmgrAdvncApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringTaskmgrAdvncApplication.class, args);
+        SpringApplication.run(SpringTaskmgrAdvncApplication.class, args) ;
     }
 
 }

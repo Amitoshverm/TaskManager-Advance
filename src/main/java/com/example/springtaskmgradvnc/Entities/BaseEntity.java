@@ -1,13 +1,13 @@
 package com.example.springtaskmgradvnc.Entities;
 
-import jakarta.persistence.*;
+
 import lombok.Getter;
 import org.springframework.data.annotation.CreatedDate;
 
+import javax.persistence.*;
 import java.util.Date;
 
 @MappedSuperclass
-@Getter
 public abstract class BaseEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
